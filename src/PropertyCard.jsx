@@ -8,7 +8,7 @@ function PropertyCard({ property, onBookmarkClick, isSaved }) {
           src={`https://mr0.homeflow.co.uk/${property.photos[0]}`}
           alt={property.display_address}
           onError={({ currentTarget }) => {
-            currentTarget.onerror = null; // prevents looping
+            currentTarget.onerror = null; 
             currentTarget.src = "/placeholder-image.png";
           }}
         />
